@@ -1,6 +1,23 @@
 # ECG Anomaly Detection Using CNN-VAE and Ensemble Deep Learning
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+  <img src="https://img.shields.io/badge/scikit--learn-1.x-blue?logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/Dataset-MIT--BIH-green" alt="MIT-BIH"/>
+  <img src="https://img.shields.io/badge/AUC-1.000-brightgreen" alt="AUC Score"/>
+  <img src="https://img.shields.io/badge/Accuracy-98.31%25-brightgreen" alt="Accuracy"/>
+</p>
+
+---
+
+> **TR:** Tek kanallı (MLII) elektrokardiyogram (EKG) sinyallerinde **otomatik anomali tespiti** gerçekleştiren derin öğrenme tabanlı bir sistem. Evrişimli Varyasyonel Otokodlayıcı (CNN-VAE) ve topluluk (ensemble) puanlama yöntemi ile kalp atışı düzeyinde anomali algılama, kümeleme ve sınıflandırma işlemleri yapılmaktadır. CNN-VAE modeli, test setinde **sıfır yanlış pozitif ve sıfır yanlış negatif** ile **AUC = 1.000** başarımına ulaşmıştır. Tespit edilen anomaliler t-SNE + GMM ile kümelenmekte ve Random Forest sınıflandırıcı ile **%98.31 doğruluk** oranında alt tiplere ayrılmaktadır.
+>
+> **EN:** A deep learning pipeline for **automatic anomaly detection** in single-channel (MLII) ECG signals. It combines a Convolutional Variational Autoencoder (CNN-VAE) with an ensemble scoring system (MSE + KL-divergence + GMM) for robust beat-level anomaly detection, followed by unsupervised clustering and supervised classification. The CNN-VAE model achieves **AUC = 1.000** with **zero false positives and zero false negatives** on the test set. Detected anomalies are clustered via t-SNE + GMM and classified into arrhythmia sub-types with **98.31% accuracy** using a Random Forest classifier.
+
+---
+
+<p align="center">
   <img src="images/figure_3.png" alt="ROC Curve – CNN-VAE vs Ensemble Model" width="600"/>
 </p>
 
